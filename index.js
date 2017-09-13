@@ -1,11 +1,16 @@
 function enter(e) {
+	var zip = $('.zip');
+
 	if (e.keyCode == 13) {
-		var zip = $('.zip').val();
-		$('.zip').blur();
+		zip.blur();
 		$('.shirt').css({'filter' : 'none'});
 		window.setTimeout(function () {
-			$('.font').text(zip);
+			$('.font').text(zip.val());
 		}, 2000);
+	} else {
+		if (zip.val() == '###') {
+			zip.val('');
+		}
 	}
 }
 
