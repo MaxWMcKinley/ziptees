@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+		<link href="index.css" rel="stylesheet">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<title>Ziptees</title>
+	</head>
+	<body>
+		<div class="fonts-container">
+			<a onclick="changeFont(event)" class="font left" style="font-family: impact;"></a><a onclick="changeFont(event)" class="font right" style="font-family: times;"></a><br />
+			<a onclick="changeFont(event)" class="font left" style="font-family: cursive;"></a><a onclick="changeFont(event)" class="font right" style="font-family: chalkduster;"></a><br />
+			<a onclick="changeFont(event)" class="font left" style="font-family: monaco;"></a><a onclick="changeFont(event)" class="font right" style="font-family: courier;"></a><br />
+			<a onclick="changeFont(event)" class="font left" style="font-family: palatino;"><a onclick="changeFont(event)" class="font right" style="font-family: fantasy;"></a></a>
+		</div>
+		<div class="shirt"></div>
+		<div class="circle">
+			<input type="number hidden" class="zip" onkeypress="return enter(event)" autofocus/>
+		</div>
+	</body>
+	<script src="index.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</html>
